@@ -1,7 +1,10 @@
 #accordeon {
     /* pour que les éléments soient alignés horizontalement */
+    display: flex;
     /* pour éviter les marges par défaut */
+    margin: 0;
     /* pour éviter les "padding" par défaut */
+    padding: 0;
 }
 
 #accordeon li {
