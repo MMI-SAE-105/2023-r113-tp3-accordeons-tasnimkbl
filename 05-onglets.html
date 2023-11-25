@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="onglet.css">
     <title>Onglets</title>
   </head>
   <body>
@@ -17,18 +18,18 @@
         <li role="tab">Onglet 3</li>
       </ul>
       <div>
-        <div role="tabpanel" x-show="ouvert === 1">
+        <div role="tabpanel" :class="{actif:ouvert===1}">
           <h1>Panneau 1</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid officia error necessitatibus assumenda
             amet! Veritatis minima nihil perspiciatis culpa eaque numquam eveniet suscipit quasi laudantium vitae, qui odio
             ex.</p>
         </div>
-        <div role="tabpanel" x-show="ouvert === 2">
+        <div role="tabpanel" :class="{actif:ouvert===2}">
           <h1>Panneau 2</h1>
           <p>Inventore veritatis in laboriosam reiciendis dignissimos facilis autem est saepe amet. Eum eveniet, reiciendis
             eaque et incidunt iusto magnam modi? Magnam error rem natus quia sint architecto veritatis praesentium quas?</p>
         </div>
-        <div role="tabpanel" x-show="ouvert === 3">
+        <div role="tabpanel" :class="{actif:ouvert===3}">
           <h1>Panneau 3</h1>
           <p>Necessitatibus, voluptate modi odit inventore in cupiditate commodi deleniti saepe eius eligendi autem iusto nemo
             iste possimus voluptatem. Exercitationem expedita repudiandae ipsum quas architecto recusandae odit voluptatum
