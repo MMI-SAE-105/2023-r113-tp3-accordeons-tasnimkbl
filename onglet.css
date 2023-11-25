@@ -1,0 +1,23 @@
+#onglets {
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+
+
+[role="tabpanel"] {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.actif[role="tabpanel"] {
+    opacity: 1;
+}
+
+
+.actif[role="tab"] {
+    background-color: #eee;
+    border: 1px solid #000;
+    text-align: right;
+}
